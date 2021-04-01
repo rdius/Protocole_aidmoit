@@ -19,6 +19,9 @@ La vocabulaire de concetps est obtenu en 04 étapes
 * le dernier point consite à ordonner par ordre décroissant, les termes suivants score de similarité. Ceux ayant les plus grand score étant les plus proches de la thématique, sémentiquement parlant. Dans notre étude, nous avons retenu les 1000er de chaque thématique, correspondant des seuils > 0.7
 
 ## 3. La constitution des corpus thématique
+La constitution des corpus thématique qui est la derniere étape se décrit en 0' étapes
+* Idem à 1) et 2), les vocabulaires de concepts sont utilisés pour collecter des documents sur Google et former ainsi de gros corpus thématiques.
+Pour s'assurer de la qualité des contenus des documents que nous collectons, nous avons mis en place une évaluation automatisée, basée sur la mesure de similarité proposée précédement avec DistilBert.  Nous avons aussi proposé 
 
 
 
