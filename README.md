@@ -3,9 +3,10 @@ Les différentes étapes du protocoles sont entre autres:
 
 ## 1. La constitution de termes experts
 La liste de termes experts est obtenue en deux étapes
-.. * tout d'abord, pour une thématique donnée, nous collectons des données (10ère pages) sur wikipédia en utilisant le mot clé thématique (ex: agriculture). Cette étape est réalisé à partir des données de wiki dans le  but d'obtenir des documents bien centrés, telsque des défnitions, historique, etc. Ce qui donnera un large choix aux experts sur les termes qui représenteront au mieux sémantiquement chaque thématique.
-.. * ensuite, pour chaque mini corpus, nous utilisons Biotex pour extraire des ensembles de termes. Les termes obtenus des mésures (f-tfidf-cm, c_value) sont fusionnés pour obtenir un seul ensemble. 
-.. * enfin, avec un avis expert, nous retenons ~100 termes pour chaque thématique. 
+
+..* tout d'abord, pour une thématique donnée, nous collectons des données (10ère pages) sur wikipédia en utilisant le mot clé thématique (ex: agriculture). Cette étape est réalisé à partir des données de wiki dans le  but d'obtenir des documents bien centrés, telsque des défnitions, historique, etc. Ce qui donnera un large choix aux experts sur les termes qui représenteront au mieux sémantiquement chaque thématique.
+..* ensuite, pour chaque mini corpus, nous utilisons Biotex pour extraire des ensembles de termes. Les termes obtenus des mésures (f-tfidf-cm, c_value) sont fusionnés pour obtenir un seul ensemble. 
+..* enfin, avec un avis expert, nous retenons ~100 termes pour chaque thématique. 
 Toujours, en se basant sur le principe d'expansion par graine, les termes experts ainsi obtenus, seront utilisés pour la constitution des vocabulaires de concepts.
 
 ## 2. La constitution de vocabulaire de concepts
