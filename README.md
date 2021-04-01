@@ -1,6 +1,8 @@
 # Protocole de collecte de données textuelles pour la constitution de corpus thématiques
 Les différentes étapes du protocoles sont entre autres:
 
+![alt tag](./protocole_sageo.png)
+
 ## 1. La constitution de termes experts
 La liste de termes experts est obtenue en deux étapes
 
