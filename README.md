@@ -11,12 +11,26 @@ La liste de termes experts est obtenue en deux étapes
 * enfin, avec un avis expert, nous retenons ~100 termes pour chaque thématique. 
 Toujours, en se basant sur le principe d'expansion par graine, les termes experts ainsi obtenus, seront utilisés pour la constitution des vocabulaires de concepts.
 
+```
+#for kw in thema_kw_list:
+wiki_pages = Scrap_wiki_pages (thema_kw) #use keyword for a given topic, such as 'urbanisation'
+BioTex_terms = Biotex_extract (wikipages)
+BioTex_terms #liste de termes Biotex, parmis lesquelles sortiront les termes experts - liste de termes experts (expert_terms)
+```
+
 ## 2. La constitution de vocabulaire de concepts
 La vocabulaire de concetps est obtenu en 04 étapes
 * la premiere consiste à utiliser les termes experts obtenus précédemment pour recolter des données sur Google, dans le but d'obtenir des données plus diversifées, en terme de contenu, que dans les sources.
 * deuxiemement, pour chaque thématique, le corpus obtenu est utilisé pour extraire des ensembles de termes en utilisant BioTex comme dans l'étape 1).
 * troisiement, afin de s'assurer que ces termes sont sémantiquement valide vis-à-vis de la thématique, nous introduisons une mesure de similarité en utilisant DistilBert. Ce calcul de similarité est évalué entre chacun des termes obtenus avec l'ensemble de la liste de termes experts obtenue en 1).
 * le dernier point consite à ordonner par ordre décroissant, les termes suivants score de similarité. Ceux ayant les plus grand score étant les plus proches de la thématique, sémentiquement parlant. Dans notre étude, nous avons retenu les 1000er de chaque thématique, correspondant des seuils > 0.7
+
+```
+voc_concepts_corpus = Scrap_Google_pages(expert_terms)
+BioTex_terms = Biotex_extract(voc_concepts_corpus)
+Ordered_BioTex_terms = Semantic_measure(BioTex_terms,expert_terms)
+final_voc_concepts = Ordered_BioTex_terms[Ordered_BioTex_terms['score'] >=0.7]['terms'] # take only  terms that have a sim score higher than .7
+```
 
 ## 3. La constitution des corpus thématique
 La constitution des corpus thématique qui est la derniere étape se décrit en 0' étapes
@@ -27,7 +41,7 @@ La constitution des corpus thématique qui est la derniere étape se décrit en 
 * Les documents obetenus, avec leur score de similarité sont ainsi classés par ordre décroissant, les scores les plus élevés correspondent aux doxuments les plus pertinents vis-à-vis de leur contenu. 
 
 
-
-* Item 2
-  * Sub Item 1
-  * Sub Item 2
+```
+thematic_corpus = Scrap_Google_pages(final_voc_concepts, final_voc_concepts_extended)
+final_corpus = thematic_corpus[thematic_corpus['score'] >=0.7]['corpus'] # take only  doc that have a sim score higher than .7
+```
