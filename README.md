@@ -11,7 +11,7 @@ La liste de termes experts est obtenue en deux étapes
 * enfin, avec un avis expert, nous retenons ~100 termes pour chaque thématique. 
 Toujours, en se basant sur le principe d'expansion par graine, les termes experts ainsi obtenus, seront utilisés pour la constitution des vocabulaires de concepts.
 
-```
+``` python
 #for kw in thema_kw_list:
 wiki_pages = Scrap_wiki_pages (thema_kw) #use keyword for a given topic, such as 'urbanisation'
 BioTex_terms = Biotex_extract (wikipages)
@@ -41,7 +41,7 @@ La constitution des corpus thématique qui est la derniere étape se décrit en 
 * Les documents obetenus, avec leur score de similarité sont ainsi classés par ordre décroissant, les scores les plus élevés correspondent aux doxuments les plus pertinents vis-à-vis de leur contenu. 
 
 
-```
+``` python
 thematic_corpus = Scrap_Google_pages(final_voc_concepts, final_voc_concepts_extended)
 final_corpus = thematic_corpus[thematic_corpus['score'] >=0.7]['corpus'] # take only  doc that have a sim score higher than .7
 ```
