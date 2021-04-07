@@ -2,7 +2,7 @@
 # Pre-requis
 
 `
-Installer Biotex via BioTex repository [via BioTex repository](....)
+Installer Biotex via BioTex repository [via BioTex repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
 Installer Mongodb
 `
 
