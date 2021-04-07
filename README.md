@@ -1,10 +1,11 @@
 
 # Pre-requis
 
-`
-Installer Biotex via BioTex repository [via BioTex repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
-Installer Mongodb
-`
+
+## Installer Biotex via BioTex repository [via BioTex repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
+
+## Installer Mongodb
+
 
 
 # Protocole de collecte de données textuelles pour la constitution de corpus thématiques
