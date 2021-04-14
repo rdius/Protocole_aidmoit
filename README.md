@@ -42,3 +42,4 @@ La constitution des corpus thématique qui est la derniere étape se décrit en 
 
 `# _Confère fichier container.ipynb pour application_
 `
+# NB: Les corpus thématiques peuvent être obtenus en exécutant directement l'épate "3 - Final step to build thematic corpora" du fichier container.ipynb
