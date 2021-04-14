@@ -2,7 +2,7 @@
 # Pre-requis
 
 
-## Installer Biotex via BioTex repository [via BioTex repository]()
+## Installer Biotex via BioTex repository [via BioTex repository](https://gitlab.irstea.fr/jacques.fize/biotex_python)
 
 ## Installer [Mongodb](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04)
 
