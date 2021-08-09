@@ -40,6 +40,6 @@ La constitution des corpus thématique qui est la derniere étape se décrit en 
 
 * Les documents obetenus, avec leur score de similarité sont ainsi classés par ordre décroissant, les scores les plus élevés correspondent aux documents les plus pertinents vis-à-vis de leur contenu. 
 
-`# _Confère fichier container.ipynb pour application_
+`# _Confère fichier container_v2.ipynb pour application_
 `
 ### NB: Les corpus thématiques peuvent être obtenus en exécutant directement l'épate "3 - Final step to build thematic corpora" du fichier container.ipynb car les vocabulaires de concepts sont déjà élaborés dans le repertoir ./voc_concepts
